@@ -1,0 +1,452 @@
+
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JFS Serviços de Manutenção de Sistemas Informáticos</title>
+        <style>
+            :root {
+                --primary: #0a2647;
+                --secondary: #144272;
+                --accent: #2c74b3;
+                --light: #f0f5f9;
+                --white: #ffffff;
+                --success: #28a745;
+            }
+
+            body {
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                background-color: #f4f7f9;
+                line-height: 1.6;
+            }
+
+            header {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--secondary) 100%
+                );
+                color: var(--white);
+                padding: 60px 20px;
+                text-align: center;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            .hero h1 {
+                margin: 0;
+                font-size: 2.5rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                opacity: 0.9;
+                margin-top: 10px;
+            }
+
+            .section-title {
+                text-align: center;
+                color: var(--primary);
+                margin-bottom: 40px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            .section-title::after {
+                content: "";
+                width: 60px;
+                height: 3px;
+                background: var(--accent);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .services {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 25px;
+                margin-bottom: 60px;
+            }
+
+            .service-card {
+                background: var(--white);
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+                border-top: 4px solid var(--accent);
+            }
+
+            .service-card h3 {
+                color: var(--secondary);
+                margin-top: 0;
+            }
+
+            .features {
+                background-color: var(--primary);
+                color: var(--white);
+                padding: 50px 30px;
+                border-radius: 15px;
+                margin-bottom: 60px;
+            }
+
+            .features-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 30px;
+                text-align: center;
+            }
+
+            .feature-item h4 {
+                font-size: 1.3rem;
+                color: var(--accent);
+                margin-bottom: 10px;
+            }
+
+            .contact-box {
+                background: var(--white);
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .contact-box h2 {
+                color: var(--primary);
+            }
+
+            .address-info {
+                font-style: normal;
+                font-size: 1.1rem;
+                color: #555;
+                line-height: 1.8;
+            }
+
+            footer {
+                text-align: center;
+                padding: 40px 20px;
+                font-size: 0.9rem;
+                color: #777;
+            }
+
+            .badge {
+                background: var(--success);
+                color: white;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .privacy-section {
+                background: var(--white);
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                margin-top: 40px;
+                margin-bottom: 40px;
+                line-height: 1.8;
+            }
+
+            .privacy-section h2 {
+                color: var(--primary);
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .privacy-section h3 {
+                color: var(--secondary);
+                margin-top: 30px;
+            }
+
+            .privacy-section p {
+                color: #444;
+                text-align: justify;
+            }
+
+            .privacy-section ul {
+                color: #444;
+                padding-left: 25px;
+            }
+
+            .privacy-section li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="hero">
+                <h1>JFS SERVIÇOS DE MANUTENÇÃO</h1>
+                <p>Soluções Inteligentes em Tecnologia da Informação</p>
+            </div>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>Suporte Técnico Especializado</h3>
+                        <p>
+                            Manutenção ágil e eficiente para garantir que seus
+                            sistemas nunca parem. Atuamos com diagnóstico
+                            preciso e resolução imediata de problemas de
+                            hardware e software.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Infraestrutura de Redes</h3>
+                        <p>
+                            Projetamos e mantemos ambientes de rede seguros e
+                            estáveis, otimizando a comunicação interna e externa
+                            da sua empresa com as melhores tecnologias do
+                            mercado.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Consultoria em TI</h3>
+                        <p>
+                            Análise estratégica dos seus sistemas para
+                            identificar gargalos e implementar melhorias que
+                            aumentam a produtividade e reduzem custos
+                            operacionais.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2
+                    style="
+                        text-align: center;
+                        margin-bottom: 40px;
+                        color: white;
+                    "
+                >
+                    O Compromisso JFS
+                </h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Entrega no Prazo</h4>
+                        <p>
+                            Sabemos que o tempo é seu recurso mais valioso.
+                            Cumprimos cronogramas com rigor germânico.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Confiabilidade</h4>
+                        <p>
+                            Processos transparentes e equipe certificada para
+                            oferecer a tranquilidade que seu negócio merece.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Qualidade</h4>
+                        <p>
+                            Não aceitamos menos que a excelência. Cada reparo ou
+                            projeto passa por rigorosos testes de padrão.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Segurança</h4>
+                        <p>
+                            Proteção total para seus dados e sistemas contra
+                            vulnerabilidades e ameaças digitais modernas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-box">
+                <div class="badge">Localizada em Canoas - RS</div>
+                <h2>Entre em Contato</h2>
+                <p>
+                    Estamos prontos para elevar o nível tecnológico da sua
+                    empresa.
+                </p>
+                <address class="address-info">
+                    <strong
+                        >JFS SERVIÇOS DE MANUTENÇÃO DE SISTEMAS INFORMÁTICOS
+                        LTDA</strong
+                    ><br />
+                    Rua Doutor Alfredo Angelo Filho, 1735<br />
+                    Bairro Igara | CEP 92.410-535<br />
+                    Canoas - Rio Grande do Sul<br /><br />
+                    <strong>Telefone:</strong>
+                    <a href="tel:+5551993088585">(51) 99308-8585</a><br />
+                    <strong>E-mail:</strong>
+                    <a href="mailto:pj@jeronimo.dev.br">pj@jeronimo.dev.br</a>
+                </address>
+            </section>
+
+            <section id="politica-privacidade" class="privacy-section">
+                <h2>Política de Privacidade</h2>
+                <p><strong>Aplicativo: JFS Serviços Comunicação</strong></p>
+
+                <p>
+                    A
+                    <strong
+                        >JFS Serviços de Manutenção de Sistemas Informáticos
+                        LTDA</strong
+                    >, inscrita sob o CNPJ 40.205.095/0001-02, com sede na Rua
+                    Doutor Alfredo Angelo Filho, 1735, Bairro Igara, CEP
+                    92.410-535, Canoas - RS, valoriza a privacidade e a proteção
+                    dos dados pessoais de seus usuários. Esta Política de
+                    Privacidade descreve como as informações são coletadas,
+                    utilizadas, armazenadas e compartilhadas no âmbito do
+                    aplicativo <strong>"JFS Serviços Comunicação"</strong>.
+                </p>
+
+                <h3>1. Coleta de Informações</h3>
+                <p>
+                    Ao utilizar o aplicativo
+                    <strong>JFS Serviços Comunicação</strong>, que é integrado
+                    ao <strong>WhatsApp</strong> (plataforma de mensagens de
+                    propriedade da <strong>Meta Platforms, Inc.</strong>), as
+                    seguintes informações podem ser coletadas:
+                </p>
+                <ul>
+                    <li>Nome e número de telefone do usuário;</li>
+                    <li>
+                        Conteúdo das mensagens trocadas por meio do aplicativo;
+                    </li>
+                    <li>Metadados das comunicações (data, hora e duração);</li>
+                    <li>Informações do dispositivo utilizado para acesso.</li>
+                </ul>
+
+                <h3>2. Uso das Informações</h3>
+                <p>As informações coletadas são utilizadas para:</p>
+                <ul>
+                    <li>Prestar atendimento e suporte ao usuário;</li>
+                    <li>Gerenciar e responder às solicitações recebidas;</li>
+                    <li>Melhorar a qualidade dos serviços oferecidos;</li>
+                    <li>Cumprir obrigações legais e regulatórias.</li>
+                </ul>
+
+                <h3>3. Compartilhamento e Armazenamento</h3>
+                <p>
+                    Toda a comunicação realizada por meio do aplicativo
+                    <strong>JFS Serviços Comunicação</strong> pode ser vista,
+                    acessada e armazenada pela
+                    <strong>JFS Serviços</strong> para fins de registro,
+                    controle de qualidade e cumprimento de obrigações legais.
+                </p>
+                <p>
+                    Adicionalmente, por se tratar de uma integração com a
+                    plataforma
+                    <strong>WhatsApp</strong>, as mensagens e demais informações
+                    trocadas também podem ser vistas, processadas e armazenadas
+                    pela <strong>Meta Platforms, Inc.</strong> (controladora do
+                    WhatsApp), de acordo com os termos de uso e política de
+                    privacidade próprios da referida plataforma. Recomendamos
+                    que o usuário consulte a
+                    <a
+                        href="https://www.whatsapp.com/legal/privacy-policy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Política de Privacidade do WhatsApp
+                    </a>
+                    para mais informações sobre o tratamento de dados pela Meta.
+                </p>
+
+                <h3>4. Direitos do Usuário</h3>
+                <p>
+                    Nos termos da Lei Geral de Proteção de Dados (LGPD - Lei nº
+                    13.709/2018), o usuário possui os seguintes direitos:
+                </p>
+                <ul>
+                    <li>Confirmar a existência de tratamento de dados;</li>
+                    <li>
+                        Acessar os dados pessoais mantidos pela JFS Serviços;
+                    </li>
+                    <li>
+                        Corrigir dados incompletos, inexatos ou desatualizados;
+                    </li>
+                    <li>
+                        Solicitar a anonimização, bloqueio ou eliminação de
+                        dados desnecessários;
+                    </li>
+                    <li>Revogar o consentimento a qualquer momento;</li>
+                    <li>Solicitar a portabilidade dos dados.</li>
+                </ul>
+
+                <h3>5. Segurança dos Dados</h3>
+                <p>
+                    A JFS Serviços adota medidas técnicas e administrativas
+                    apropriadas para proteger os dados pessoais contra acessos
+                    não autorizados, destruição, perda, alteração ou qualquer
+                    forma de tratamento inadequado ou ilícito.
+                </p>
+
+                <h3>6. Contato</h3>
+                <p>
+                    Caso o usuário tenha dúvidas, solicitações ou queira exercer
+                    qualquer um de seus direitos relacionados à privacidade e
+                    proteção de dados, pode entrar em contato conosco pelos
+                    canais abaixo:
+                </p>
+                <ul>
+                    <li>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:pj@jeronimo.dev.br"
+                            >pj@jeronimo.dev.br</a
+                        >
+                    </li>
+                    <li>
+                        <strong>Telefone:</strong>
+                        <a href="tel:+5551993088585">(51) 99308-8585</a>
+                    </li>
+                </ul>
+
+                <h3>7. Alterações nesta Política</h3>
+                <p>
+                    Esta Política de Privacidade pode ser atualizada
+                    periodicamente. Recomendamos que o usuário revise esta
+                    página regularmente para se manter informado sobre eventuais
+                    alterações. O uso continuado do aplicativo após a publicação
+                    de alterações constitui aceitação das mesmas.
+                </p>
+
+                <p
+                    style="
+                        text-align: center;
+                        margin-top: 30px;
+                        font-size: 0.9rem;
+                        color: #777;
+                    "
+                >
+                    <em>Última atualização: março de 2026.</em>
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <p>
+                &copy; 2026 JFS Serviços de Manutenção. Todos os direitos
+                reservados.
+            </p>
+            <p>
+                <small
+                    >CNAE 62.09-1-00 - Suporte técnico, manutenção e outros
+                    serviços em TI</small
+                >
+            </p>
+        </footer>
+</body>
+</html>
